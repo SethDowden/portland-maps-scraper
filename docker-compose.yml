@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  portland-maps: 
+  image: SethDowden/Portland-Maps-Scraper
+  restart: unless-stopped
+
+environment:
+  APIKEY: "your api key"
+  TZ: "time-zone"
+
+volumes:
+  /path/to/output/data:/data/
