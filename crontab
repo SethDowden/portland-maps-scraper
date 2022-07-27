@@ -1,6 +1,6 @@
 
 # START CRON JOB
-0 0 * * * python /app/PortlandMaps.py > /proc/1/fd/1 2>/proc/1/fd/2
+* * * * * python /app/PortlandMaps.py > /proc/1/fd/1 2>/proc/1/fd/2
 # END CRON JOB
 # * * * * * command to be executed
 # - - - - -
