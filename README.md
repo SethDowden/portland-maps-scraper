@@ -1,2 +1,3 @@
 # portland-maps-scraper
- script which scrapes Portland Maps
+
+Script, which scrapes Portland Maps
