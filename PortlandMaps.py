@@ -19,8 +19,8 @@ for county in counties:
         print(response)
         print (is_data)
         print (response.size)
-        response.to_csv("Portland_Maps_Assessor_Data.csv", mode='a', index=False, header=not os.path.exists("Portland_Maps_Assessor_Data.csv"))
+        response.to_csv("/data/Portland_Maps_Assessor_Data_live.csv", mode='a', index=False, header=not os.path.exists("/data/Portland_Maps_Assessor_Data_live.csv"))
 
         page += 1
         time.sleep(5)
-os.rename ("Portland_Maps_Assessor_Data.csv", "/data/Portland_Maps_Assessor_Data.csv")
+os.rename ("/data/Portland_Maps_Assessor_Data_live.csv", "/data/Portland_Maps_Assessor_Data.csv")
